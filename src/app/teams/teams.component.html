@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class="row">
+      
+    <div class="col-md-6">
+      <div class="card">
+            
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th>Id</th> <th >Name</th><th >Short</th><th >City</th> 
+                      </tr>
+                  </thead>
+                  <tbody>
+                       
+                      <tr *ngFor="let player of nbaplayers">
+                          <td (click)="run(player)">{{player.playerId}}</td>
+                          <td >{{player.abbreviation}}</td>
+                          <td >{{player.playerName}}</td>
+                          <td >{{player.simpleName}}</td>
+                          <td >{{player.location}}</td>
+                      </tr>
+                  </tbody>
+              </table>
+
+          </div>
+      </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card">
+          
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th> <th >Name</th><th >Short</th><th >City</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                     
+                    <tr *ngFor="let player of players"> 
+                        <td >{{player.playerId}}</td>
+                        <td >{{player.firstName}}</td>
+                        <td >{{player.lastName}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+ 

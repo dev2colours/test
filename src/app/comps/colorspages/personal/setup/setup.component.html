@@ -1,0 +1,50 @@
+    <div class="col-md-12 ">
+        <div>
+          <h5 class="title" style="margin-top:0em; color:darkslategray">Setup Your Personal Account...</h5>
+          <p class="category" style="margin-top:-1em">Map out your main life activities.
+            <br>These are task classifications under which you do most of your daily activities</p>
+        </div>
+        <div class="spacer" style="height:1em"></div>
+        <div class="card-content table-responsive table-full-width">
+          <table class="table ">
+            <tbody>
+              <tr>
+                <td>
+                  <a routerLink="/colpersonal/projects">Projects</a>
+                </td>
+                <td>
+                  <span color="orange" class="ti-menu"></span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a routerLink="/colpersonal/work">Work</a>
+                </td>
+                <td>
+                  <span class="ti-menu"></span>
+                </td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <form class="ng-pristine ng-valid">
+            <fieldset>
+              <div class="form-group column-sizing">
+                <a class="col-sm-3 control-label">Add New Classification</a>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="e.g. Health">
+                    </div>
+                    <div class="col-md-3">
+                      <button type="submit" ng-click="addMap()" class="btn btn-info btn-simple"> Save </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+    </div>
+ 

@@ -1,0 +1,86 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+          <div class="header">
+              <h4 class="title">Edit Profile</h4>
+          </div>
+          <div class="content">
+              <app-boss></app-boss>
+              <form>
+                  <div class="row">
+                      <div class="col-md-3">
+                          <div class="form-group">
+                              <label>Company</label>
+                              <input type="text" [(ngModel)]="company" name="company" class="form-control border-input"  placeholder="Company" value="colours Code Inc.">
+                          </div>
+                      </div>
+                      
+                      <div class="col-md-3">
+                          <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" [(ngModel)]="email" name="email" class="form-control border-input" placeholder="Email">
+                          </div>
+                      </div>
+                  
+                      <div class="col-md-3">
+                          <div class="form-group">
+                              <label>First Name</label>
+                              <input type="text" [(ngModel)]="firstname" name="firstname" class="form-control border-input" placeholder="Company" value="Chet">
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="form-group">
+                              <label>Last Name</label>
+                              <input type="text" class="form-control border-input" [(ngModel)]="lastname" name="lastname" placeholder="Last Name" value="Faker">
+                          </div>
+                      </div>
+                  </div>
+
+                  
+                  
+                  <div class="text-center">
+                      <button type="submit" (click)="addPerson()" class="btn btn-info btn-fill btn-wd">Save Profile</button>
+                  </div>
+                  <div class="clearfix"></div>
+              </form>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card">
+          
+          <div class="content table-responsive table-full-width">
+              
+              <table class="table table-striped">
+                  
+                  <tbody>
+                      <tr *ngFor="let item of items | async">
+                          <td >{{item.data.company}}</td>
+                          <td >{{item.data.firstname}}</td>
+                          <td >{{item.data.lastname}}</td>
+                          <td >{{item.data.email}}</td>
+                          <td (click)="getPost(item.id)" > 
+                            <span class="ti-view-grid"></span> 
+                         </td>
+                        <td><input type="submit" (click)="deletePost(item.id)" value="Delete"></td>
+                      </tr>
+                  </tbody>
+              </table>
+
+          </div>
+      </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card" >
+      <h4>{{(selectedItem | async)?.company}}</h4>
+      <h5>{{(selectedItem | async)?.firstname}} {{(selectedItem | async)?.lastname}} </h5>
+      
+    </div>
+  </div>
+
+
+
+  </div>
+</div>
