@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-submenu',
+  selector: 'app-company-submenu',
   templateUrl: './submenu.component.html',
   styleUrls: ['./submenu.component.css']
 })
-export class SubmenuComponent implements OnInit {
+export class CompanySubmenuComponent implements OnInit {
 
   constructor() { }
 

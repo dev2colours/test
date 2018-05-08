@@ -1,142 +1,17 @@
-<div class="nav-tabs-wrapper">
-  <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-    <li class="active">
-      <a data-target="#subs" data-toggle="tab" aria-expanded="true">Subsidiaries</a>
-    </li>
-    <li>
-      <a data-target="#departs" data-toggle="tab" aria-expanded="true">Departments</a>
-    </li>
-    <li>
-      <a data-target="#projects" data-toggle="tab" aria-expanded="true">Projects</a>
-    </li>
-    <li>
-      <a data-target="#staff" data-toggle="tab" aria-expanded="true">Staff Register</a>
-    </li>
-    <li>
-      <a data-target="#accounts" data-toggle="tab" aria-expanded="true">Client Accounts</a>
-    </li>
-    <li>
-      <a data-target="#asset" data-toggle="tab" aria-expanded="true">Asset Register</a>
-    </li>
-  </ul>
-</div>
-<div id="my-tab-content" class="tab-content">
-  <div class="tab-pane active" id="subs">
-    <div class="card card-plain col-md-12">
-      
-      <app-subsidiaries></app-subsidiaries>
+<div class="wrapper">
+  <div class="sidebar" data-background-color="white" data-active-color="danger">
+    <sidebar-cmp></sidebar-cmp>
+  </div>
+  <div class="main-panel">
+    <navbar-cmp></navbar-cmp>
+    <div class="content">
+      <!-- /////////////    start Company    \\\\\\\\\\\\\ -->
 
+      <app-company-submenu></app-company-submenu>
 
+      <!-- /////////////    END OF THE DASHBOARD   \\\\\\\\\\\\\ -->
     </div>
-  </div>
-  <div class="tab-pane " id="departs">
-    <div class="card card-plain col-md-12">
-      <form>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="form-group">
-              <label>Create New Department</label>
-              <input type="text" class="form-control border-input" placeholder="e.g. Southland">
-            </div>
-          </div>
-        </div>
-        <div class="spacer" style="height:1em"></div>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="form-group">
-              <button type="submit" class="btn btn-simple btn-success pull-right"> Save </button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-  <div class="tab-pane " id="projects">
-    <div class="card card-plain col-md-12">
-      <form>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="form-group">
-              <label>Create Enterprise Project</label>
-              <input type="text" class="form-control border-input" placeholder="e.g. Southland">
-            </div>
-          </div>
-        </div>
-        <div class="spacer" style="height:1em"></div>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="form-group">
-              <button type="submit" class="btn btn-simple btn-success pull-right"> Save </button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-  <div class="tab-pane " id="staff">
-    <div class="card card-plain col-md-12">
-      <form>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="form-group">
-              <label>Create Staff Register</label>
-              <input type="text" class="form-control" placeholder="e.g. Southland">
-            </div>
-          </div>
-        </div>
-        <div class="spacer" style="height:1em"></div>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="form-group">
-              <button type="submit" class="btn btn-simple btn-success pull-right"> Save </button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-  <div class="tab-pane " id="accounts">
-    <div class="card card-plain col-md-12">
-      <form>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="form-group">
-              <label>Create Client Account</label>
-              <input type="text" class="form-control border-input" placeholder="e.g. Southland">
-            </div>
-          </div>
-        </div>
-        <div class="spacer" style="height:1em"></div>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="form-group">
-              <button type="submit" class="btn btn-simple btn-success pull-right"> Save </button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-  <div class="tab-pane " id="asset">
-    <div class="card card-plain col-md-12">
-      <form>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="form-group">
-              <label>Create Asset Register</label>
-              <input type="text" class="form-control border-input" placeholder="e.g. Southland">
-            </div>
-          </div>
-        </div>
-        <div class="spacer" style="height:1em"></div>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="form-group">
-              <button type="submit" class="btn btn-simple btn-success pull-right"> Save </button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
+    <!-- <footer-cmp></footer-cmp> -->
   </div>
 </div>
+<!-- <fixedplugin-cmp></fixedplugin-cmp> -->

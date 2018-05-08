@@ -1,5 +1,28 @@
-<!-- <p>It`s working</p> -->
 <div class="card-content">
+  <!-- <div class="nav-tabs-navigation">
+    <div class="nav-tabs-wrapper">
+      <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active">
+          <a href="#home" data-toggle="tab">Task Scheduler</a>
+        </li>
+        <li>
+          <a href="#messages" data-toggle="tab">Calendar</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="my-tab-content" class="tab-content text-center">
+    <div class="tab-pane active" id="home">
+      <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly
+        meets the new Retina HD display.</p>
+    </div>
+    <div class="tab-pane" id="messages">
+      <p>Here are your messages.</p>
+    </div>
+  </div>
+</div> -->
+
+
   <div class="nav-tabs-navigation">
     <div class="nav-tabs-wrapper">
       <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
@@ -14,62 +37,10 @@
   </div>
   <div id="my-tab-content" class="tab-content text-center">
     <div class="tab-pane active" id="home">
-      <!-- Task Scheduler -->
-      <div class="col-md-12">
-        <div style="color: grey">
-          <div>
-            <h5 class="title" style="margin-top:0em; color: grey">Task Scheduler</h5>
-          </div>
-          <div class="content">
-            <table class="table-nested">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th class="cell-input">
-                    <span class="ti-plus"></span>Task Name</th>
-                  <th> Duration </th>
-                  <th> Start </th>
-                  <th> End </th>
-                  <th> Champion </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <form class="ng-pristine ng-valid"></form>
-                  <td class="cell-input">
-                    <input type="text" placeholder="New Task">
-                  </td>
-                  <td class="cell-input">
-                    <input type="text" placeholder="duration">
-                  </td>
-                  <td class="cell-input">
-                    <input type="date" placeholder="start">
-                  </td>
-                  <td class="cell-input">
-                    <input type="date" placeholder="end">
-                  </td>
-                  <td class="cell-input">
-                    <input type="text" placeholder="Project Champion">
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+      <app-task-schedular></app-task-schedular>
     </div>
     <div class="tab-pane" id="calendar">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="card card-calendar">
-              <div class="card-content">
-                <div id="fullCalendar"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <app-fullcalendar></app-fullcalendar>
     </div>
   </div>
 </div>

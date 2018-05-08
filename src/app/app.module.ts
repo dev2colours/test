@@ -39,7 +39,7 @@ import { PersonalSetupComponent } from './comps/colorspages/personal/setup/setup
 import { AdminLayoutComponent } from './layouts/admin/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth/auth-layout.component';
 import { CalendarComponent } from './comps/calendar/calendar.component';
-import { ImplComponent } from './comps/colorspages/personal/implementation/implementation.component';
+// import { ImplComponent } from './comps/colorspages/personal/implementation/implementation.component';
 import { PlanningComponent } from './comps/calendar/planning/planning.component';
 import { ReportComponent } from './comps/colorspages/personal/report/report.component';
 import { PersonalComponent } from './comps/colorspages/personal/personal.component';
@@ -47,6 +47,18 @@ import { CompanyComponent } from './comps/colorspages/company/company.component'
 import { PersonalDashboardComponent } from './comps/colorspages/personal/personal-dashboard/personal-dashboard.component';
 import { ProjectComponent } from './comps/colorspages/project/project.component';
 import { WorkComponent } from './comps/colorspages/work/work.component';
+import { CompanySubmenuComponent } from './comps/colorspages/company/submenu/submenu.component';
+import { PersonalImplComponent } from './comps/colorspages/personal/implementation/implementation.component';
+import { CompanyImplComponent } from './comps/colorspages/company/implementation/implementation.component';
+import { ProjectImplComponent } from './comps/colorspages/project/implementation/implementation.component';
+import { SubsidiariesComponent } from './comps/colorspages/company/setup/subsidiaries/subsidiaries.component';
+import { DepartmentsComponent } from './comps/colorspages/company/setup/departments/departments.component';
+import { ProjectsComponent } from './comps/colorspages/company/setup/projects/projects.component';
+import { ClientAccountsComponent } from './comps/colorspages/company/setup/client-accounts/client-accounts.component';
+import { AssetRegisterComponent } from './comps/colorspages/company/setup/asset-register/asset-register.component';
+import { StaffRegisterComponent } from './comps/colorspages/company/setup/staff-register/staff-register.component';
+import { TaskSchedularComponent } from './comps/calendar/planning/task-schedular/task-schedular.component';
+import { FullcalendarComponent } from './comps/calendar/planning/fullcalendar/fullcalendar.component';
 
 @NgModule({
   declarations: [
@@ -74,14 +86,24 @@ import { WorkComponent } from './comps/colorspages/work/work.component';
     AdminLayoutComponent,
     AuthLayoutComponent,
     CalendarComponent,
-    ImplComponent,
+    PersonalImplComponent,
+    CompanyImplComponent,
+    ProjectImplComponent,
     PlanningComponent,
     PersonalComponent,
     CompanyComponent,
     PersonalDashboardComponent,
     ProjectComponent,
-    WorkComponent
-    
+    WorkComponent,
+    CompanySubmenuComponent,
+    SubsidiariesComponent,
+    DepartmentsComponent,
+    ProjectsComponent,
+    ClientAccountsComponent,
+    AssetRegisterComponent,
+    StaffRegisterComponent,
+    TaskSchedularComponent,
+    FullcalendarComponent
   ],
   imports: [
     BrowserModule,
