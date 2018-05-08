@@ -1,0 +1,84 @@
+<div class="wrapper">
+  <div class="sidebar" data-background-color="white" data-active-color="danger">
+    <sidebar-cmp></sidebar-cmp>
+  </div>
+  <div class="main-panel">
+    <navbar-cmp></navbar-cmp>
+    <div class="content">       
+      <!-- /////////////    BEGINING OF THE DASHBOARD   \\\\\\\\\\\\\ -->
+
+<!-- colours projects add new project -->
+
+      <div class="main-content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <!-- ngView: -->
+              <div ng-view="" class="ng-scope">
+                <div class="card ng-scope">
+                  <form class="ng-pristine ng-valid">
+                    <div class="row">
+                      <div class="col-md-10 col-md-offset-1">
+                        <!-- <div class="card"> -->
+                        <div class="card-header">
+                          <h4 class="title">Enterprise</h4>
+                        </div>
+                        <div class="card-content table-responsive table-full-width">
+                          <div class="card-content table-responsive table-full-width">
+                            <table class="table ">
+                              <tbody>
+                                <!-- ngRepeat: company in Companies -->
+                                <tr ng-repeat="company in Companies" class="ng-scope">
+                                  <td>
+                                    <a href="colenterprise/calendar" ng-click="setActivePage(company.name); setActiveCompany(company)" class="ng-binding">
+                                      Colours</a>
+                                  </td>
+                                  <!-- <td><span class="ti-trash" ng-click="Companies.$remove(company)"></span> </td>  -->
+
+                                </tr>
+                                <!-- end ngRepeat: company in Companies -->
+                                <tr ng-repeat="company in Companies" class="ng-scope">
+                                  <td>
+                                    <a href="colenterprise/calendar" ng-click="setActivePage(company.name); setActiveCompany(company)" class="ng-binding">
+                                      Mambo Press Ltd</a>
+                                  </td>
+                                  <!-- <td><span class="ti-trash" ng-click="Companies.$remove(company)"></span> </td>  -->
+                                </tr>
+                                <tr>
+                                  <td></td>
+                                </tr>
+                                <!-- end ngRepeat: company in Companies -->
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="row">
+                            <button class="btn btn-primary btn-simple pull-right" (click)="showSwal('input-field')">
+                              Invite user
+                            </button>
+                            <button class="btn btn-primary btn-simple  pull-right" (click)="showSwal('request-message-and-cancel')">
+                              Connect to Existing Enterprise Project
+                            </button>
+                            <a type="button" class="btn btn-primary btn-simple pull-right" href="#!newCompany" ng-click="setActivePage('Create new Company')">
+                              Create New Enterprise
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- /////////////    END OF THE DASHBOARD   \\\\\\\\\\\\\ -->
+    </div>
+    <!-- <footer-cmp></footer-cmp> -->
+  </div>
+</div>
+<!-- <fixedplugin-cmp></fixedplugin-cmp> -->

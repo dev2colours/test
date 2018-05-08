@@ -40,6 +40,10 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2015 Daniel Eden
 */
+.reg-col {
+  margin-bottom: 1em
+}
+
 .table-lists {
   height: 46px;
   padding-bottom: 13px;
@@ -146,7 +150,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .reg_info {
-  height: 7em;
+  height: 35em;
   overflow: hidden;
   overflow-y: scroll
 }

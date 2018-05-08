@@ -36,13 +36,11 @@ export class LoginComponent implements OnInit {
     this.sidebarVisible = false;
   }
   loginwgoogle() {
-    this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
-    // checkLogin(url: string): boolean {
-    
-      // if (this.loginwgoogle) {
-      //   return true;
-      // }
-      this.router.navigateByUrl('dashboard');
+    this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
+
+    .then(nav => {
+      this.router.navigateByUrl('dashboard'); });
+
   }
   logout() {
     this.afAuth.auth.signOut();

@@ -1,0 +1,287 @@
+<!-- <div class="wrapper">
+    <div class="sidebar" data-background-color="white" data-active-color="danger">
+        <sidebar-cmp></sidebar-cmp>
+    </div>
+    <div class="main-panel">
+        <navbar-cmp></navbar-cmp>
+        <div class="content"> -->
+<!-- /////////////    BEGINING OF THE DASHBOARD   \\\\\\\\\\\\\ -->
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="card" style="height:600px">
+                    <!--  style="height:600px" -->
+                    <div class="card-content btn-magnify">
+                        <div class="row col-x-5" style="margin-left:1em; padding-bottom: -1em">
+                            <div class="pull-left" style="color: steelblue">
+                                <!-- <a><font size="5">Colours Personal</font></a> -->
+                                <h5>
+                                    <i class="ti-palette"></i>Colours Personal</h5>
+                            </div>
+                        </div>
+                        <!-- <hr class="line" style="padding-bottom:0em; padding-top: -1em"> -->
+                        <div class="pull-left" style="margin-left:1em;padding-top: -1em; color: steelblue ">
+                            <font size="3">My Diary Today</font>
+                        </div>
+                        <div class="spacer" style="height: 2em;"></div>
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-xs-6" style="margin-left:2.0em">
+                                    <p style="color:lightgrey">
+                                        <font size=3>Meeting</font>
+                                    </p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="pull-right">
+                                        <span class="label label-warning">
+                                            1000 Hrs
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6" style="margin-left:2.0em">
+                                    <p style="color:lightgrey">
+                                        <font size=3>Email</font>
+                                    </p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="pull-right">
+                                        <span class="label label-success">
+                                            1230 Hrs
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6" style="margin-left:2.0em">
+                                    <p style="color:lightgrey">
+                                        <font size=3>Skype</font>
+                                    </p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="pull-right">
+                                        <span class="label label-success">
+                                            1400 Hrs
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content btn-magnify">
+                        <div class="pull-left" style="margin-left:1.0em; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                            <a>
+                                <i class="fa fa-pie-chart fa-fw"></i>
+                                <font size="3"> Personal Metrics</font>
+                            </a>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="spacer" style="height:2.1em"></div>
+                        <!-- chart1 -->
+                        <div class="row">
+                            <div class="card-content">
+                                <a class="pull-left" style="color:lightgrey; margin-left:1em">
+                                    <font size=2> Time budget Actual vs Planned</font>
+                                </a>
+                                <div id="PSline1"></div>
+                            </div>
+                            <div class="card-content">
+                                <p style="color:lightgrey;margin-left:1em">
+                                    <font size=2>Days exercised per week</font>
+                                </p>
+                                <div id="chartTotalSubscriptions"></div>
+                            </div>
+                            <div class="card-content">
+                                <p style="color:lightgrey;margin-left:1em">
+                                    <font size=2>Last Report </font>
+                                </p>
+                                <div class="form-group col-md-11">
+                                    <input type="text" class="form-control datetimepicker" placeholder="Date time" />
+                                </div>
+                                <!-- <div id="chartTotalSubscriptions"></div> -->
+                            </div>
+                        </div>
+                        <!-- ****End of Charts**** -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="card" style="height:600px">
+                    <!--  style="height:410px" data-background-color="green" -->
+                    <div class="card-content btn-magnify">
+                        <div class="row col-x-5" style="margin-left:1em; padding-bottom: -1em ">
+                            <div class="pull-left" style="color: steelblue">
+                                <h5>
+                                    <i class="ti-layout-tab-v"></i> Colours Projects</h5>
+                            </div>
+                        </div>
+                        <!-- <hr class="line" style="padding-bottom:0em; padding-top: -1em"> -->
+                        <div class="pull-left" style="margin-left:.5em;padding-top: -1em; color: steelblue; ">
+                            <font size="3">My Current Priority Projects</font>
+                        </div>
+                        <div class="spacer" style="height:2.4em;"></div>
+                        <div class="row">
+                            <div class="col-xs-10 " style="margin-left:1.0em">
+                                <a class="text-danger" style="color:lightgrey" href="#send_agenda">
+                                    <font size=3>Joina City</font>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-10 " style="margin-left:1.0em">
+                                <a class="text-danger" style="color:lightgrey" href="#send_agenda">
+                                    <font size=3>Aripo Offices</font>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-10 " style="margin-left:1.0em">
+                                <a class="text-danger" style="color:lightgrey" href="#send_agenda">
+                                    <font size=3>Colours Software</font>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-10 " style="margin-left:1.0em">
+                                <a class="text-danger" style="color:lightgrey" href="#send_agenda">
+                                    <font size=3>Beitbridge</font>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content btn-magnify">
+                        <div class="pull-left" style="margin-left:1.0em; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                            <a>
+                                <font size="3">
+                                    <i class="fa fa-line-chart fa-fw"></i> Personal Metrics on Projects</font>
+                            </a>
+                        </div>
+                        <div class="spacer" style="height:2.1em"></div>
+                        <!-- chart1 -->
+                        <div class="row">
+                            <div class="card-content">
+                                <a class="pull-left" style="color:lightgrey; margin-left:1em">
+                                    <font size=2> Progress Actual vs Planned</font>
+                                </a>
+                                <div id="chartActivity"></div>
+                            </div>
+                            <div class="card-content">
+                                <p style="color:lightgrey;margin-left:1em">
+                                    <font size=2>Meetings attended</font>
+                                </p>
+                                <div id="chartTotalDownloads" style="margin-left: 1em"></div>
+                            </div>
+                            <div class="card-content">
+                                <p style="color:lightgrey;margin-left:1em">
+                                    <font size=2>Last Report: </font>
+                                </p>
+                                <div class="form-group col-md-11">
+                                    <input type="text" class="form-control datepicker" placeholder="Datetime Last Report" />
+                                </div>
+                                <!-- <div id="chartTotalSubscriptions"></div> -->
+                            </div>
+                        </div>
+                        <!-- ****End of Charts**** -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="card" style="height:600px">
+                    <!--  style="height:410px" -->
+                    <div class="card-content btn-magnify">
+                        <div class="row col-x-5" style="margin-left:.5em; padding-bottom: -1em ">
+                            <div class="pull-left" style="color:steelblue">
+                                <h5>
+                                    <i class="ti-briefcase"></i> Colours Enterprise</h5>
+                            </div>
+                        </div>
+                        <!-- <hr class="line" style="padding-bottom:0em; padding-top: -1em"> -->
+                        <div class="pull-left" style="margin-left:1em;padding-top: -1em; color: steelblue; ">
+                            <font size="3">High Priority Enterprise Tasks</font>
+                        </div>
+                        <!-- <div class="numbers" style="margin-left:1em; color:rgb(15, 4, 4)">High Priority Enterprise Tasks</div> -->
+                        <div class="spacer" style="height:2.4em;"></div>
+                        <div class="row">
+                            <div class="col-xs-10 " style="margin-left:1em">
+                                <a class="text-danger" style="color:lightgrey" href="#send_agenda">
+                                    <!-- style="color:darkgrey" -->
+                                    <font size=3>Send Agenda</font>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-10" style="margin-left:1em">
+                                <a href="#Respond_to_mail" style="color:lightgrey">
+                                    <font size=3>Respond to Mail</font>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-10" style="margin-left:1em">
+                                <a href="#Contact_Supplier" style="color:lightgrey">
+                                    <font size=3>Contact Supplier</font>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-10" style="margin-left:1em">
+                                <a href="#Aripo" style="color:lightgrey">
+                                    <font size=3>Aripo</font>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content btn-magnify">
+                        <div class="pull-left" style="margin-left:1.0em; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                            <a>
+                                <font size="3">
+                                    <i class="fa fa-area-chart fa-fw"></i> Personal Metrics on Enterprise</font>
+                                <!-- color="steelblue" -->
+                                <!-- <span class="text-muted">Projects </span>Register -->
+                            </a>
+                        </div>
+                        <div class="spacer" style="height:2.1em"></div>
+                        <!-- chart1 -->
+                        <div class="row">
+                            <div class="card-content">
+                                <a style="color:lightgrey;margin-left:0.78em">
+                                    <font size=2>Targets Achieved vs planned</font>
+                                </a>
+                                <div id="chartEnt1" class="ct-chart"></div>
+                            </div>
+                            <div class="card-content">
+                                <p style="color:lightgrey;margin-left:0.78em">
+                                    <font size=2>Balance Score Card</font>
+                                </p>
+                                <div id="chartEnt2" class="ct-chart"></div>
+                            </div>
+                            <div class="card-content">
+                                <p style="color:lightgrey;margin-left:1em">
+                                    <font size=2>Next Progress Report: </font>
+                                </p>
+                                <div class="form-group col-md-11">
+                                    <input type="text" class="form-control datepicker" placeholder="Date time" />
+                                </div>
+                                <!-- <div id="chartTotalSubscriptions"></div> -->
+                            </div>
+                        </div>
+                        <!-- ****End of Charts**** -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- </div> -->
+
+        <!-- </div> -->
+        <!-- /////////////    END OF THE DASHBOARD   \\\\\\\\\\\\\ -->
+        <!-- </div> -->
+        <!-- <footer-cmp></footer-cmp> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <fixedplugin-cmp></fixedplugin-cmp> -->
