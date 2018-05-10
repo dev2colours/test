@@ -59,6 +59,13 @@ import { AssetRegisterComponent } from './comps/colorspages/company/setup/asset-
 import { StaffRegisterComponent } from './comps/colorspages/company/setup/staff-register/staff-register.component';
 import { TaskSchedularComponent } from './comps/calendar/planning/task-schedular/task-schedular.component';
 import { FullcalendarComponent } from './comps/calendar/planning/fullcalendar/fullcalendar.component';
+import { ColoursProjectsComponent } from './comps/colorspages/projects/colours-projects.component';
+import { PojectsSubmenuComponent } from './comps/colorspages/projects/submenu/submenu.component';
+import { ProjectsSetupComponent } from './comps/colorspages/projects/setup/setup.component';
+import { ProjectPlantComponent } from './comps/colorspages/projects/setup/project-plant/project-plant.component';
+import { ProjectLabourComponent } from './comps/colorspages/projects/setup/project-labour/project-labour.component';
+import { ProjectDirectoryComponent } from './comps/colorspages/projects/setup/project-directory/project-directory.component';
+import { ProjectDescriptionComponent } from './comps/colorspages/projects/setup/project-description/project-description.component';
 
 @NgModule({
   declarations: [
@@ -103,7 +110,14 @@ import { FullcalendarComponent } from './comps/calendar/planning/fullcalendar/fu
     AssetRegisterComponent,
     StaffRegisterComponent,
     TaskSchedularComponent,
-    FullcalendarComponent
+    FullcalendarComponent,
+    ColoursProjectsComponent,
+    PojectsSubmenuComponent,
+    ProjectsSetupComponent,
+    ProjectPlantComponent,
+    ProjectLabourComponent,
+    ProjectDirectoryComponent,
+    ProjectDescriptionComponent
   ],
   imports: [
     BrowserModule,

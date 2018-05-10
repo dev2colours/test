@@ -16,6 +16,7 @@ import { PersonalSetupComponent } from './comps/colorspages/personal/setup/setup
 import { Component } from '@angular/core';
 import { ProjectComponent } from './comps/colorspages/project/project.component';
 import { WorkComponent } from './comps/colorspages/work/work.component';
+import { ColoursProjectsComponent } from './comps/colorspages/projects/colours-projects.component';
 
 export const AppRoutes: Routes = [{
         path: '',
@@ -49,6 +50,10 @@ export const AppRoutes: Routes = [{
         path: 'personal',
         component: PersonalComponent
     },
+    {
+        path: 'projects',
+        component: ColoursProjectsComponent
+    },
     {   path: 'project',
         component: ProjectComponent
     },
@@ -81,11 +86,6 @@ export const AppRoutes: Routes = [{
     }
 
 ];
-    
-
-
-
-
 
 
     // {
