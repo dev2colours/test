@@ -59,13 +59,17 @@ import { AssetRegisterComponent } from './comps/colorspages/company/setup/asset-
 import { StaffRegisterComponent } from './comps/colorspages/company/setup/staff-register/staff-register.component';
 import { TaskSchedularComponent } from './comps/calendar/planning/task-schedular/task-schedular.component';
 import { FullcalendarComponent } from './comps/calendar/planning/fullcalendar/fullcalendar.component';
-import { ColoursProjectsComponent } from './comps/colorspages/projects/colours-projects.component';
-import { PojectsSubmenuComponent } from './comps/colorspages/projects/submenu/submenu.component';
+import { ProjectsImplComponent } from './comps/colorspages/projects/implementation/implementation.component';
 import { ProjectsSetupComponent } from './comps/colorspages/projects/setup/setup.component';
-import { ProjectPlantComponent } from './comps/colorspages/projects/setup/project-plant/project-plant.component';
-import { ProjectLabourComponent } from './comps/colorspages/projects/setup/project-labour/project-labour.component';
-import { ProjectDirectoryComponent } from './comps/colorspages/projects/setup/project-directory/project-directory.component';
 import { ProjectDescriptionComponent } from './comps/colorspages/projects/setup/project-description/project-description.component';
+import { ProjectDirectoryComponent } from './comps/colorspages/projects/setup/project-directory/project-directory.component';
+import { ProjectLabourComponent } from './comps/colorspages/projects/setup/project-labour/project-labour.component';
+import { ProjectPlantComponent } from './comps/colorspages/projects/setup/project-plant/project-plant.component';
+import { PojectsSubmenuComponent } from './comps/colorspages/projects/submenu/submenu.component';
+import { ColoursProjectsComponent } from './comps/colorspages/projects/colours-projects.component';
+// import { AuthorizationComponent } from './services/authorization/authorization.component';
+// import { CompanyServicesComponent } from './services/company/company-services.component';
+// import { PersonalServicesComponent } from './services/personal/personal-services.component';
 
 @NgModule({
   declarations: [
@@ -90,11 +94,13 @@ import { ProjectDescriptionComponent } from './comps/colorspages/projects/setup/
     RegisterComponent,
     CompanySetupComponent,
     PersonalSetupComponent,
+    ProjectsSetupComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
     CalendarComponent,
     PersonalImplComponent,
     CompanyImplComponent,
+    ProjectsImplComponent,
     ProjectImplComponent,
     PlanningComponent,
     PersonalComponent,
@@ -111,13 +117,19 @@ import { ProjectDescriptionComponent } from './comps/colorspages/projects/setup/
     StaffRegisterComponent,
     TaskSchedularComponent,
     FullcalendarComponent,
-    ColoursProjectsComponent,
-    PojectsSubmenuComponent,
-    ProjectsSetupComponent,
-    ProjectPlantComponent,
-    ProjectLabourComponent,
+    ProjectDescriptionComponent,
     ProjectDirectoryComponent,
-    ProjectDescriptionComponent
+    ProjectLabourComponent,
+    ProjectPlantComponent,
+    PojectsSubmenuComponent,
+    ColoursProjectsComponent,
+    // services
+
+    // AuthorizationComponent,
+    // CompanyServicesComponent,
+    // PersonalServicesComponent
+
+    /* end */
   ],
   imports: [
     BrowserModule,

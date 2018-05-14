@@ -7,11 +7,11 @@ declare interface TableData {
 }
 
 @Component({
-  selector: 'app-company-implementation',
+  selector: 'app-projects-implementation',
   templateUrl: './implementation.component.html',
   styleUrls: ['./implementation.component.css']
 })
-export class CompanyImplComponent implements OnInit {
+export class ProjectsImplComponent implements OnInit {
 
 
   public tableDataC: TableData;

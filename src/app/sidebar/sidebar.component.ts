@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import {  LoginComponent } from '../comps/auth/login/login.component';
+import {  LoginComponent } from '../pages/login/login.component';
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
 
