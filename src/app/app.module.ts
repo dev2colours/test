@@ -140,12 +140,12 @@ import { ColoursProjectsComponent } from './comps/colorspages/projects/colours-p
     FooterModule,
     FixedPluginModule,
     AngularFireModule.initializeApp({
-      apiKey: 'AIzaSyDlVk4yyfvfM8Z19BYDt3Zt_LO_I21td7g',
-      authDomain: 'colors-a07e8.firebaseapp.com',
-      databaseURL: 'https://colors-a07e8.firebaseio.com',
-      projectId: 'colors-a07e8',
-      storageBucket: 'colors-a07e8.appspot.com',
-      messagingSenderId: '848651061453'
+      apiKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxx_LO_I21td7g',
+      authDomain: 'xxxxxxxxxxxxxxxxxxxx.firebaseapp.com',
+      databaseURL: 'xxxxxxxxxxxxxxxxxxxx.firebaseio.com',
+      projectId: 'xxxxxxxxxxxxxxxxxx',
+      storageBucket: 'xxxxxxxxxxxxxxxx.appspot.com',
+      messagingSenderId: 'xxxxxxxxxxxxxxxxxxxxxx'
     }),
     AngularFirestoreModule.enablePersistence(),
     AngularFireAuthModule
